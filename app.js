@@ -7,10 +7,9 @@ const { Schema } = require('mongoose');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-
 const app = express();
 
-const PORT = procces.env.PORT
+const PORT = process.env.PORT;
 
 app.use(logger('dev'));
 app.use(express.json());
