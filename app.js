@@ -10,7 +10,7 @@ const usersRouter = require('./routes/users');
 
 const app = express();
 
-const PORT = procces.env.PORT
+const PORT = process.env.PORT
 
 app.use(logger('dev'));
 app.use(express.json());

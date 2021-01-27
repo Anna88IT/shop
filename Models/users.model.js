@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
-const URL = require('./');
+const URL = require('../config');
 const {Schema}= mongoose;
 
-const articleSchema = new Schema({
-    name: String,
+const users = new Schema({
+    firstname: String,
+    lastname: String,
     email: String,
-    number: String,
-    message: String
+    mobile: String
 })
 
-module.exports = mongoose.model('user', articleSchema);
+module.exports = mongoose.model('user', users);
