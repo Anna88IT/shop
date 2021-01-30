@@ -9,4 +9,4 @@ const users = new Schema({
     mobile: String
 })
 
-module.exports = mongoose.model('user', users);
+module.exports = mongoose.model('users', users);
